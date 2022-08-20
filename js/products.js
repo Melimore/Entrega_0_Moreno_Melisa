@@ -9,30 +9,28 @@ const autos101="https://japceibal.github.io/emercado-api/cats_products/101.json"
 }*/
 
 function mostrarProductos(listaProductos){
-    let htmlContentToAppend = "";
 
-    for(let i = 0; i < listaProductos.length; i++){ 
-        let producto = listaProductos[i];
-        htmlContentToAppend += `
-        <div class="list-group-item list-group-item-action">
-            <div class="row">
-                <div class="col-3">
-                    <img src="` + producto.image + `" alt="product image" class="img-thumbnail">
+    for(const producto of listaProductos){ 
+        let li= `
+        <div>
+            <div>
+                <div>
+                    <img src="` + producto.image + `" alt="product image">
                 </div>
-                <div class="col">
-                    <div class="d-flex w-100 justify-content-between">
-                        <div class="mb-1">
+                <div>
+                    <div>
+                        <div >
                         <h4>`+ producto.name +`-`+ producto.currency + ` `+producto.cost `</h4> 
                         <p> ` + producto.description + `</p> 
                         </div>
-                        <small class="text-muted">` + producto.soldCount + ` vendidos</small> 
+                        <small>` + producto.soldCount + ` vendidos</small> 
                     </div>
 
                 </div>
             </div>
         </div>
-        `
-        document.getElementById("cat-list-container").innerHTML = htmlContentToAppend; 
+        `;
+        document.getElementById("autos").innerHTML += li; 
     }
 }
 
