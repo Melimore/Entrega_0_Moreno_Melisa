@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("ingresar").addEventListener("click", function(){
+        document.getElementById("comprobacion1").innerHTML=" "
+        document.getElementById("comprobacion2").innerHTML=" "
         let var_comprueba= true
         if(document.getElementById("emailUser").value==""){
             document.getElementById("comprobacion1").innerHTML="ingresa tu e-mail"
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
             var_comprueba= false
         }
         if(var_comprueba==true){
-            window.location.replace = "index.html";
+            window.location.replace("index.html");
         }
     })
 })
