@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
             var_comprueba= false
         }
         if(var_comprueba==true){
-            window.location.replace("principal.html");
+            window.location.replace("index.html");
         }
     })
 })
