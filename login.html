@@ -19,8 +19,22 @@
 <body>
   <main class="mt-5">
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+      <div class="inicio">
+        <form>
+          <img height="150" src="img\login.png">
+          <h1>Inicio de sesión</h1>
+          <p>
+            <label for="emailUser">Email</label><br>
+            <input type="email" id="emailUser" placeholder="Email">
+          </p>
+          <p class="alerta" style="color: red;" id="comprobacion1"></p>
+          <p>
+            <label for="contrasenia">Contraseña </label><br>
+           <input type="password" id="contrasenia" placeholder="Contraseña">
+          </p>
+          <p class="alerta" style="color: red;" id="comprobacion2"></p>
+          <button id="ingresar" type="button">Ingresar</button>
+        </form>
       </div>
     </div>
   </main>
