@@ -37,6 +37,23 @@
     </div>
   </nav>
   <main class="pb-5 container">
+    <div id="filtros">
+      <div class="filt">
+        <label for="asc">Ordenar precio:</label>
+        <input type="button" value="ascendente" id="asc">
+        <input type="button" value="descendente" id="des">
+      </div>
+      <div class="filt">
+        <input type="button" value="Relevancia" id="relevancia">
+      </div>
+      <div class="filt">
+        <label for="min">Precio</label>
+        <input type="number" id="min" placeholder="min.">
+        <input type="number" id="max" placeholder="max.">
+        <input type="button" id="filtrar" value="Filtrar">
+        <p id="limpiar">Limpiar</p>
+      </div>
+    </div>
     <div  id="products">
 
     </div>

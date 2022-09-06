@@ -192,3 +192,30 @@ a.custom-card:hover {
 form{
   text-align: center;
 }
+
+#filtros{
+  border: 1px;
+  width: auto;
+  margin: auto;
+  padding: 20px, 20px;
+  text-align: right;
+}
+
+#min, #max{
+  width: 100px;
+}
+
+#limpiar{
+  width: fit-content;
+  text-align: right;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+#limpiar:hover{
+  color: #0087F7;
+}
+
+.filt{
+  margin-top: 10px;
+}

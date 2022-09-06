@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
             var_comprueba= false
         }
         if(var_comprueba==true){
+            localStorage.setItem("UserId", document.getElementById("emailUser").value)
             window.location.replace("index.html");
         }
     })
